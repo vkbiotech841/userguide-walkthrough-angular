@@ -1,40 +1,11 @@
 <div class="container" style="margin-top: 10%;">
     <div class="container-fluid">
-        <div class="d-flex justify-between">
 
-
-
-            <div class="popup">
-                <button class="btn btn-secondary m-2" (click)="showTooltip(1)">Step 01</button>
-                <span class="popuptext" *ngIf="isTooltip01" [ngClass]="{'show': isTooltip01}">
-                    A Simple Popup step 01!
-                    <button class="btn btn-primary" (click)="showTooltip(2)">Next</button>
-                </span>
-            </div>
-
-            <div class="popup">
-                <button class="btn btn-secondary m-2">Step 02</button>
-                <span class="popuptext" *ngIf="isTooltip02" [ngClass]="{'show': isTooltip02}">
-                    A Simple Popup step 02!
-                    <button class="btn btn-primary" (click)="showTooltip(3)">Next</button>
-                </span>
-            </div>
-
-            <div class="popup">
-                <button class="btn btn-secondary m-2">Step 03</button>
-                <span class="popuptext" *ngIf="isTooltip03" [ngClass]="{'show': isTooltip03}">
-                    A Simple Popup step 02!
-                    <button class="btn btn-primary" (click)="showTooltip(4)">Next</button>
-                </span>
-            </div>
-
-            <div class="popup">
-                <button class="btn btn-secondary m-2">Step 04</button>
-                <span class="popuptext" *ngIf="isTooltip04" [ngClass]="{'show': isTooltip04}">
-                    A Simple Popup step 02!
-                    <button class="btn btn-primary" (click)="showTooltip('finish')">Finish</button>
-                </span>
+        <div>
+            <div [routerLink]="['/basic-walkthrough']">
+                <button class="btn-secondary">Basic Walkthrough</button>
             </div>
         </div>
+
     </div>
 </div>
